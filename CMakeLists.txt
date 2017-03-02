@@ -81,9 +81,9 @@ add_custom_command(TARGET gossip_lib PRE_BUILD
 	${PROJECT_SOURCE_DIR}/include ${PROJECT_BINARY_DIR}/include)
 
 # copy rdict and rootmap to build dir
-add_custom_command(TARGET gossip_lib POST_BUILD
-	COMMAND ${CMAKE_COMMAND} -E copy
-	${PROJECT_BINARY_DIR}/gossip_rdict.pcm ${PROJECT_BINARY_DIR}/lib)
+# add_custom_command(TARGET gossip_lib POST_BUILD
+# 	COMMAND ${CMAKE_COMMAND} -E copy
+# 	${PROJECT_BINARY_DIR}/gossip_rdict.pcm ${PROJECT_BINARY_DIR}/lib)
 
 add_custom_command(TARGET gossip_lib POST_BUILD
 	COMMAND ${CMAKE_COMMAND} -E copy
